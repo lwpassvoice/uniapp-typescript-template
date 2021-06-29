@@ -8,6 +8,7 @@
     "build:app-plus": "cross-env NODE_ENV=production UNI_PLATFORM=app-plus vue-cli-service uni-build",
     "build:custom": "cross-env NODE_ENV=production uniapp-cli custom",
     "build:h5": "cross-env NODE_ENV=production UNI_PLATFORM=h5 vue-cli-service uni-build",
+    "build:analyzer": "cross-env NODE_ENV=production UNI_PLATFORM=h5 vue-cli-service uni-build --mode analyzer",
     "build:mp-360": "cross-env NODE_ENV=production UNI_PLATFORM=mp-360 vue-cli-service uni-build",
     "build:mp-alipay": "cross-env NODE_ENV=production UNI_PLATFORM=mp-alipay vue-cli-service uni-build",
     "build:mp-baidu": "cross-env NODE_ENV=production UNI_PLATFORM=mp-baidu vue-cli-service uni-build",
@@ -86,6 +87,7 @@
     "@vue/eslint-config-airbnb": "^5.0.2",
     "@vue/eslint-config-typescript": "^7.0.0",
     "babel-plugin-import": "^1.11.0",
+    "compression-webpack-plugin": "^5.0.1",
     "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-plugin-html": "^6.1.2",
@@ -96,7 +98,8 @@
     "miniprogram-api-typings": "*",
     "postcss-comment": "^2.0.0",
     "typescript": "^4.3.4",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "webpack-bundle-analyzer": "^4.4.2"
   },
   "browserslist": [
     "Android >= 4",
